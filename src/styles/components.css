@@ -1,0 +1,113 @@
+
+.category-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e7ece6;
+  border-radius: 23px;
+  background: white;
+  box-shadow: 0 8px 28px rgba(20, 60, 35, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(20, 60, 35, 0.12);
+}
+
+.category-image {
+  position: relative;
+  height: 195px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.category-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s;
+}
+
+.category-card:hover .category-image img {
+  transform: scale(1.05);
+}
+
+.category-fallback {
+  font-size: 75px;
+}
+
+.category-count {
+  position: absolute;
+  bottom: 14px;
+  right: 15px;
+  padding: 8px 13px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #246a49;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.category-body {
+  padding: 25px;
+}
+
+.category-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.category-heading h3 {
+  margin: 0 0 6px;
+  color: #153f30;
+  font-size: 24px;
+}
+
+.category-kazakh {
+  color: #34855d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.category-small-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 13px;
+  background: #f0f6ef;
+  font-size: 21px;
+}
+
+.category-body > p {
+  min-height: 62px;
+  margin: 20px 0;
+  color: #78877a;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.category-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 17px;
+  border: 0;
+  border-radius: 12px;
+  background: #edf6ef;
+  color: #256c48;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.category-button:hover {
+  background: #277451;
+  color: white;
+}

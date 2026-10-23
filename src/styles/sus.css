@@ -1,0 +1,75 @@
+.sus-page { min-height: 100vh; background: #f8f7f0; color: #183e30; }
+.sus-navbar { min-height: 80px; padding: 14px 7%; display: flex; align-items: center; justify-content: space-between; gap: 15px; background: #fff; }
+.sus-brand { border: 0; background: none; color: #153f30; font-size: 22px; font-weight: 800; cursor: pointer; }
+.sus-back { padding: 12px 17px; border: 1px solid #dce9df; border-radius: 12px; background: #f5faf5; color: #277451; font-weight: 700; cursor: pointer; }
+.sus-container { max-width: 1050px; margin: 0 auto; padding: 36px 22px 85px; }
+.sus-intro { padding: 36px 40px; background: #236b4a; border-radius: 24px; color: #fff; }
+.sus-tag { display: inline-block; padding: 8px 14px; border-radius: 100px; background: #e5f3e9; color: #236b4a; font-size: 11px; font-weight: 800; letter-spacing: 1px; }
+.sus-intro h1 { margin: 20px 0 12px; color: #fff; font-size: clamp(28px, 4vw, 43px); }
+.sus-intro p { max-width: 780px; color: #e2f0e6; line-height: 1.7; }
+.sus-intro .sus-demo-note { margin-top: 15px; font-size: 12px; color: #c3e7d1; }
+.sus-progress-info { display: flex; justify-content: space-between; gap: 10px; margin: 30px 0 12px; font-size: 14px; color: #236b4a; }
+.sus-progress-track { height: 9px; border-radius: 100px; background: #dce9df; overflow: hidden; }
+.sus-progress-fill { height: 100%; background: #277451; transition: width .2s ease; }
+.sus-questions { display: grid; gap: 18px; margin-top: 26px; }
+.sus-question { min-width: 0; margin: 0; padding: 26px; border: 1px solid #e1e9df; border-radius: 18px; background: #fff; }
+.sus-question legend { width: 100%; box-sizing: border-box; padding: 0 0 12px; color: #183e30; font-size: 17px; font-weight: 750; line-height: 1.5; }
+.sus-question legend span { display: block; margin: 0 0 7px; color: #277451; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+.sus-options { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.sus-option { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; min-height: 95px; padding: 12px 7px; border: 1px solid #dce9df; border-radius: 12px; background: #fbfdfa; cursor: pointer; text-align: center; }
+.sus-option input { accent-color: #277451; }
+.sus-option strong { color: #236b4a; font-size: 18px; }
+.sus-option span { color: #718575; font-size: 11px; line-height: 1.35; }
+.sus-option.selected { background: #e2f3e7; border: 2px solid #277451; }
+.sus-option:focus-within { outline: 2px solid #277451; outline-offset: 2px; }
+.sus-submit-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 28px; }
+.sus-submit-row p { color: #748678; }
+.sus-primary, .sus-secondary { padding: 14px 22px; border-radius: 12px; font-weight: 750; cursor: pointer; }
+.sus-primary { border: 0; background: #277451; color: #fff; }
+.sus-primary:disabled { opacity: .45; cursor: not-allowed; }
+.sus-secondary { border: 1px solid #dce9df; background: #fff; color: #277451; }
+.sus-result { margin-top: 28px; padding: 45px 25px; background: #fff; border: 1px solid #e1e9df; border-radius: 22px; text-align: center; }
+.sus-result h2 { color: #183e30; margin: 20px 0; }
+.sus-score { font-size: clamp(60px, 11vw, 96px); font-weight: 800; line-height: 1; color: #236b4a; }
+.sus-score span { font-size: 25px; color: #718575; }
+.sus-result p { color: #718575; line-height: 1.65; }
+.sus-result-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+.sus-error { color: #a12929 !important; }
+@media(max-width: 700px) { .sus-navbar { padding: 12px 5%; } .sus-brand { font-size: 18px; } .sus-back { font-size: 12px; padding: 10px; } .sus-intro { padding: 28px 23px; } .sus-question { padding: 20px 14px; } .sus-options { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 5px; } .sus-option { padding: 7px 3px; min-height: 92px; } .sus-option span { font-size: 9px; } }
+
+/* Fix SUS question headings */
+
+.sus-question {
+  padding: 20px 26px 26px;
+}
+
+.sus-question legend {
+  float: left;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 0;
+  box-sizing: border-box;
+  color: #183e30;
+  font-size: 17px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.sus-question legend span {
+  display: block;
+  margin-bottom: 8px;
+  color: #277451;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.sus-options {
+  clear: both;
+}
+
+@media (max-width: 700px) {
+  .sus-question {
+    padding: 20px 14px;
+  }
+}
